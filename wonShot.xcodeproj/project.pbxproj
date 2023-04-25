@@ -13,6 +13,7 @@
 		95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB329F6B371005B36B0 /* LaunchScreen.storyboard */; };
 		95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */; };
 		95C5EED029F7F09E005B36B0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EECF29F7F09E005B36B0 /* Colors.xcassets */; };
+		95C5EED729F85E42005B36B0 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EED629F85E42005B36B0 /* HomePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		95C5EEB629F6B371005B36B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinPages.storyboard; sourceTree = "<group>"; };
 		95C5EECF29F7F09E005B36B0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		95C5EED629F85E42005B36B0 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		95C5EEC429F6BC51005B36B0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				95C5EED129F85C62005B36B0 /* Home */,
 				95C5EEC829F6ECF7005B36B0 /* Login */,
 				95C5EEC629F6BFA9005B36B0 /* Common */,
 			);
@@ -177,6 +180,30 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		95C5EED129F85C62005B36B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95C5EED329F85DE1005B36B0 /* View */,
+				95C5EED229F85DD9005B36B0 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		95C5EED229F85DD9005B36B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95C5EED329F85DE1005B36B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95C5EED629F85E42005B36B0 /* HomePage.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +267,7 @@
 				95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */,
 				95C5EED029F7F09E005B36B0 /* Colors.xcassets in Resources */,
 				95C5EEB229F6B371005B36B0 /* Assets.xcassets in Resources */,
+				95C5EED729F85E42005B36B0 /* HomePage.storyboard in Resources */,
 				95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
