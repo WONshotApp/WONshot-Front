@@ -12,6 +12,7 @@
 		95C5EEB229F6B371005B36B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB129F6B371005B36B0 /* Assets.xcassets */; };
 		95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB329F6B371005B36B0 /* LaunchScreen.storyboard */; };
 		95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */; };
+		95C5EED029F7F09E005B36B0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EECF29F7F09E005B36B0 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		95C5EEB429F6B371005B36B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C5EEB629F6B371005B36B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinPages.storyboard; sourceTree = "<group>"; };
+		95C5EECF29F7F09E005B36B0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		95C5EEBF29F6BC15005B36B0 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				95C5EECF29F7F09E005B36B0 /* Colors.xcassets */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */,
+				95C5EED029F7F09E005B36B0 /* Colors.xcassets in Resources */,
 				95C5EEB229F6B371005B36B0 /* Assets.xcassets in Resources */,
 				95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */,
 			);
