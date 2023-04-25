@@ -11,6 +11,7 @@
 		95C5EEAB29F6B370005B36B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEAA29F6B370005B36B0 /* SceneDelegate.swift */; };
 		95C5EEB229F6B371005B36B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB129F6B371005B36B0 /* Assets.xcassets */; };
 		95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB329F6B371005B36B0 /* LaunchScreen.storyboard */; };
+		95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		95C5EEB129F6B371005B36B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C5EEB429F6B371005B36B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C5EEB629F6B371005B36B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinPages.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				95C5EEB629F6B371005B36B0 /* Info.plist */,
-				95C5EEBD29F6BC01005B36B0 /* Source */,
 				95C5EEBC29F6BBF9005B36B0 /* Resource */,
+				95C5EEBD29F6BC01005B36B0 /* Source */,
 			);
 			path = wonShot;
 			sourceTree = "<group>";
@@ -130,6 +132,7 @@
 		95C5EEC429F6BC51005B36B0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				95C5EEC829F6ECF7005B36B0 /* Login */,
 				95C5EEC629F6BFA9005B36B0 /* Common */,
 			);
 			path = Presentation;
@@ -147,6 +150,30 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		95C5EEC829F6ECF7005B36B0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95C5EECC29F6F1CE005B36B0 /* Controller */,
+				95C5EEC929F6EDDA005B36B0 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95C5EEC929F6EDDA005B36B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95C5EECC29F6F1CE005B36B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +236,7 @@
 			files = (
 				95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */,
 				95C5EEB229F6B371005B36B0 /* Assets.xcassets in Resources */,
+				95C5EECB29F6EE02005B36B0 /* JoinPages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
