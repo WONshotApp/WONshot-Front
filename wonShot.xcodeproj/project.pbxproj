@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95A2C0942A12288E00CD7F87 /* Monthly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A2C0932A12288E00CD7F87 /* Monthly.storyboard */; };
+		95A2C0982A14AFAE00CD7F87 /* Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A2C0972A14AFAE00CD7F87 /* Daily.storyboard */; };
 		95C5EEA929F6B370005B36B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEA829F6B370005B36B0 /* AppDelegate.swift */; };
 		95C5EEAB29F6B370005B36B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEAA29F6B370005B36B0 /* SceneDelegate.swift */; };
 		95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB329F6B371005B36B0 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		95A2C0932A12288E00CD7F87 /* Monthly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Monthly.storyboard; sourceTree = "<group>"; };
+		95A2C0972A14AFAE00CD7F87 /* Daily.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Daily.storyboard; sourceTree = "<group>"; };
 		95C5EEA529F6B370005B36B0 /* wonShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C5EEA829F6B370005B36B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C5EEAA29F6B370005B36B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,22 @@
 			isa = PBXGroup;
 			children = (
 				95A2C0932A12288E00CD7F87 /* Monthly.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95A2C0952A14AF8700CD7F87 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				95A2C0962A14AF9D00CD7F87 /* View */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		95A2C0962A14AF9D00CD7F87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95A2C0972A14AFAE00CD7F87 /* Daily.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 		95C5EEC429F6BC51005B36B0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				95A2C0952A14AF8700CD7F87 /* Daily */,
 				95A2C0912A12282100CD7F87 /* Monthly */,
 				95C5EEDA2A00F4BD005B36B0 /* Camera */,
 				95C5EED129F85C62005B36B0 /* Home */,
@@ -318,6 +337,7 @@
 			files = (
 				95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */,
 				95A2C0942A12288E00CD7F87 /* Monthly.storyboard in Resources */,
+				95A2C0982A14AFAE00CD7F87 /* Daily.storyboard in Resources */,
 				95C5EEDE2A00F4FE005B36B0 /* Camera.storyboard in Resources */,
 				95C5EED029F7F09E005B36B0 /* Colors.xcassets in Resources */,
 				95C5EED729F85E42005B36B0 /* HomePage.storyboard in Resources */,
