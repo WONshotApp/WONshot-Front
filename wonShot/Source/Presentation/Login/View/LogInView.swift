@@ -1,5 +1,5 @@
 //
-//  LogInViewController.swift
+//  LogInView.swift
 //  wonShot
 //
 //  Created by nayeon  on 2023/05/02.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController, UITextFieldDelegate {
+class LogInView: UIViewController, UITextFieldDelegate {
     
     var userModel = UserModel() // 인스턴스 생성
 

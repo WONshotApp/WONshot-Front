@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View-->
         <scene sceneID="fYL-U4-PLE">
             <objects>
-                <viewController id="7RM-Q9-m1z" sceneMemberID="viewController">
+                <viewController id="7RM-Q9-m1z" customClass="SignUpView" customModule="wonShot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z8R-rJ-AZX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="5fu-fQ-moa" kind="show" id="Hee-WH-d9j"/>
+                                    <action selector="completeAction:" destination="7RM-Q9-m1z" eventType="touchUpInside" id="vuK-QB-Vhj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-QW-l2z">
@@ -104,33 +104,39 @@
                     <navigationItem key="navigationItem" id="0RD-69-Qtp">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="f30-6g-vfW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="IDtextField" destination="fKU-un-DIm" id="mjt-9Q-Yb3"/>
+                        <outlet property="nameTF" destination="l25-tJ-SsH" id="SMh-Hv-oGX"/>
+                        <outlet property="passwordCheckTF" destination="MQJ-OL-vfm" id="ph1-eW-rw4"/>
+                        <outlet property="passwordTF" destination="i1O-QW-l2z" id="sXg-N4-f6T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtM-LI-kmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1546" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Complete View-->
         <scene sceneID="paW-iH-lsT">
             <objects>
-                <viewController id="5fu-fQ-moa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompleteView" id="5fu-fQ-moa" customClass="CompleteView" customModule="wonShot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wk0-rW-2fl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DR-jO-OMn">
-                                <rect key="frame" x="143" y="382" width="70" height="24"/>
+                                <rect key="frame" x="143" y="338" width="70" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-ba-KmY">
-                                <rect key="frame" x="218" y="382" width="35" height="24"/>
+                                <rect key="frame" x="218" y="338" width="35" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-tu-tS7">
-                                <rect key="frame" x="165" y="321" width="63" height="33"/>
+                                <rect key="frame" x="165" y="277" width="63" height="33"/>
                                 <color key="tintColor" red="0.18823529410000001" green="0.62352941179999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="29g-RL-2HI"/>
@@ -172,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="-63" y="75"/>
         </scene>
-        <!--Log In View Controller-->
+        <!--Log In View-->
         <scene sceneID="N1y-SW-c8c">
             <objects>
-                <viewController storyboardIdentifier="LogInViewController" id="g0V-VW-fUC" customClass="LogInViewController" customModule="wonShot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="g0V-VW-fUC" customClass="LogInView" customModule="wonShot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcN-8v-5AR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

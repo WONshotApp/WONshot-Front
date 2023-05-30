@@ -20,9 +20,12 @@
 		95C5EED729F85E42005B36B0 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EED629F85E42005B36B0 /* HomePage.storyboard */; };
 		95C5EED929F86CC0005B36B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EED829F86CC0005B36B0 /* Assets.xcassets */; };
 		95C5EEDE2A00F4FE005B36B0 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEDD2A00F4FE005B36B0 /* Camera.storyboard */; };
-		95C5EEE02A00F55C005B36B0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */; };
+		95C5EEE02A00F55C005B36B0 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEDF2A00F55C005B36B0 /* LogInView.swift */; };
 		95E0D6332A25BDEC0011B0B5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6322A25BDEC0011B0B5 /* UserModel.swift */; };
 		95E0D6352A25C0060011B0B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6342A25C0060011B0B5 /* User.swift */; };
+		95E0D6372A25DA3C0011B0B5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6362A25DA3B0011B0B5 /* SignUpView.swift */; };
+		95E0D63A2A25DC8A0011B0B5 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6392A25DC8A0011B0B5 /* SignUpModel.swift */; };
+		95E0D63C2A25E20F0011B0B5 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D63B2A25E20F0011B0B5 /* CompleteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +44,12 @@
 		95C5EED629F85E42005B36B0 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		95C5EED829F86CC0005B36B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C5EEDD2A00F4FE005B36B0 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		95C5EEDF2A00F55C005B36B0 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		95E0D6322A25BDEC0011B0B5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		95E0D6342A25C0060011B0B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95E0D6362A25DA3B0011B0B5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		95E0D6392A25DC8A0011B0B5 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		95E0D63B2A25E20F0011B0B5 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,7 +237,7 @@
 		95C5EEC829F6ECF7005B36B0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				95C5EECC29F6F1CE005B36B0 /* Controller */,
+				95E0D6382A25DA500011B0B5 /* Model */,
 				95C5EEC929F6EDDA005B36B0 /* View */,
 			);
 			path = Login;
@@ -241,18 +247,11 @@
 			isa = PBXGroup;
 			children = (
 				95C5EECA29F6EE02005B36B0 /* JoinPages.storyboard */,
+				95C5EEDF2A00F55C005B36B0 /* LogInView.swift */,
+				95E0D6362A25DA3B0011B0B5 /* SignUpView.swift */,
+				95E0D63B2A25E20F0011B0B5 /* CompleteView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		95C5EECC29F6F1CE005B36B0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */,
-				95E0D6322A25BDEC0011B0B5 /* UserModel.swift */,
-				95E0D6342A25C0060011B0B5 /* User.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		95C5EED129F85C62005B36B0 /* Home */ = {
@@ -303,6 +302,16 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		95E0D6382A25DA500011B0B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95E0D6342A25C0060011B0B5 /* User.swift */,
+				95E0D6322A25BDEC0011B0B5 /* UserModel.swift */,
+				95E0D6392A25DC8A0011B0B5 /* SignUpModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,9 +394,12 @@
 				95E0D6332A25BDEC0011B0B5 /* UserModel.swift in Sources */,
 				95A2C09E2A15517600CD7F87 /* HomeVC.swift in Sources */,
 				95C5EEA929F6B370005B36B0 /* AppDelegate.swift in Sources */,
+				95E0D63A2A25DC8A0011B0B5 /* SignUpModel.swift in Sources */,
 				95C5EEAB29F6B370005B36B0 /* SceneDelegate.swift in Sources */,
+				95E0D63C2A25E20F0011B0B5 /* CompleteView.swift in Sources */,
+				95E0D6372A25DA3C0011B0B5 /* SignUpView.swift in Sources */,
 				95A2C0A02A15568200CD7F87 /* TabarController.swift in Sources */,
-				95C5EEE02A00F55C005B36B0 /* LogInViewController.swift in Sources */,
+				95C5EEE02A00F55C005B36B0 /* LogInView.swift in Sources */,
 				95E0D6352A25C0060011B0B5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
