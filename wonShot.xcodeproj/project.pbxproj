@@ -10,6 +10,8 @@
 		95A2C0942A12288E00CD7F87 /* Monthly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A2C0932A12288E00CD7F87 /* Monthly.storyboard */; };
 		95A2C0982A14AFAE00CD7F87 /* Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A2C0972A14AFAE00CD7F87 /* Daily.storyboard */; };
 		95A2C09C2A154AB000CD7F87 /* Analyze.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A2C09B2A154AB000CD7F87 /* Analyze.storyboard */; };
+		95A2C09E2A15517600CD7F87 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2C09D2A15517600CD7F87 /* HomeVC.swift */; };
+		95A2C0A02A15568200CD7F87 /* TabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2C09F2A15568200CD7F87 /* TabarController.swift */; };
 		95C5EEA929F6B370005B36B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEA829F6B370005B36B0 /* AppDelegate.swift */; };
 		95C5EEAB29F6B370005B36B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEAA29F6B370005B36B0 /* SceneDelegate.swift */; };
 		95C5EEB529F6B371005B36B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEB329F6B371005B36B0 /* LaunchScreen.storyboard */; };
@@ -18,14 +20,17 @@
 		95C5EED729F85E42005B36B0 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EED629F85E42005B36B0 /* HomePage.storyboard */; };
 		95C5EED929F86CC0005B36B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EED829F86CC0005B36B0 /* Assets.xcassets */; };
 		95C5EEDE2A00F4FE005B36B0 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C5EEDD2A00F4FE005B36B0 /* Camera.storyboard */; };
-		95C5EEE02A00F55C005B36B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEDF2A00F55C005B36B0 /* LoginVC.swift */; };
-		95C5EEE22A00F578005B36B0 /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEE12A00F578005B36B0 /* JoinVC.swift */; };
+		95C5EEE02A00F55C005B36B0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */; };
+		95E0D6332A25BDEC0011B0B5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6322A25BDEC0011B0B5 /* UserModel.swift */; };
+		95E0D6352A25C0060011B0B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6342A25C0060011B0B5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95A2C0932A12288E00CD7F87 /* Monthly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Monthly.storyboard; sourceTree = "<group>"; };
 		95A2C0972A14AFAE00CD7F87 /* Daily.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Daily.storyboard; sourceTree = "<group>"; };
 		95A2C09B2A154AB000CD7F87 /* Analyze.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analyze.storyboard; sourceTree = "<group>"; };
+		95A2C09D2A15517600CD7F87 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = wonShot/Source/Presentation/Analyze/View/HomeVC.swift; sourceTree = SOURCE_ROOT; };
+		95A2C09F2A15568200CD7F87 /* TabarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabarController.swift; path = wonShot/Source/Presentation/Analyze/View/TabarController.swift; sourceTree = SOURCE_ROOT; };
 		95C5EEA529F6B370005B36B0 /* wonShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C5EEA829F6B370005B36B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C5EEAA29F6B370005B36B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +41,9 @@
 		95C5EED629F85E42005B36B0 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		95C5EED829F86CC0005B36B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C5EEDD2A00F4FE005B36B0 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		95C5EEDF2A00F55C005B36B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		95C5EEE12A00F578005B36B0 /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		95E0D6322A25BDEC0011B0B5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		95E0D6342A25C0060011B0B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,8 +248,9 @@
 		95C5EECC29F6F1CE005B36B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				95C5EEDF2A00F55C005B36B0 /* LoginVC.swift */,
-				95C5EEE12A00F578005B36B0 /* JoinVC.swift */,
+				95C5EEDF2A00F55C005B36B0 /* LogInViewController.swift */,
+				95E0D6322A25BDEC0011B0B5 /* UserModel.swift */,
+				95E0D6342A25C0060011B0B5 /* User.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +267,8 @@
 		95C5EED229F85DD9005B36B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95A2C09D2A15517600CD7F87 /* HomeVC.swift */,
+				95A2C09F2A15568200CD7F87 /* TabarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,10 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C5EEE22A00F578005B36B0 /* JoinVC.swift in Sources */,
+				95E0D6332A25BDEC0011B0B5 /* UserModel.swift in Sources */,
+				95A2C09E2A15517600CD7F87 /* HomeVC.swift in Sources */,
 				95C5EEA929F6B370005B36B0 /* AppDelegate.swift in Sources */,
 				95C5EEAB29F6B370005B36B0 /* SceneDelegate.swift in Sources */,
-				95C5EEE02A00F55C005B36B0 /* LoginVC.swift in Sources */,
+				95A2C0A02A15568200CD7F87 /* TabarController.swift in Sources */,
+				95C5EEE02A00F55C005B36B0 /* LogInViewController.swift in Sources */,
+				95E0D6352A25C0060011B0B5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +531,6 @@
 				INFOPLIST_FILE = wonShot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,7 +557,6 @@
 				INFOPLIST_FILE = wonShot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

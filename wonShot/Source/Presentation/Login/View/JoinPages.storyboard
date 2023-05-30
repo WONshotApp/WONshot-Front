@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O5T-kC-52i">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="-63" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="N1y-SW-c8c">
             <objects>
-                <viewController id="g0V-VW-fUC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="g0V-VW-fUC" customClass="LogInViewController" customModule="wonShot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcN-8v-5AR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,6 +240,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logInBtn:" destination="g0V-VW-fUC" eventType="touchUpInside" id="auZ-nw-Pam"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIm-Vp-Qyz">
                                 <rect key="frame" x="40" y="607" width="313" height="45"/>
@@ -293,6 +296,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sV5-db-fL2"/>
+                    <connections>
+                        <outlet property="idTF" destination="c26-Jq-emb" id="Bcc-w9-SqZ"/>
+                        <outlet property="joinBtn" destination="pIm-Vp-Qyz" id="yeK-qB-lbB"/>
+                        <outlet property="loginBtn" destination="Xgh-vl-9bV" id="fZL-fM-oQT"/>
+                        <outlet property="passwdTF" destination="mIQ-1w-PI0" id="BhO-eb-QK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oag-Zb-3ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
