@@ -23,6 +23,11 @@ class LogInView: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        idTF.underlined()
+        passwdTF.underlined() 
+    }
 
     // MARK: - Objc Function
     @IBAction func logInBtn(_ sender: UIButton) {
@@ -36,6 +41,12 @@ class LogInView: UIViewController, UITextFieldDelegate {
             self.present(tabBarVC, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func signUpBtn(_ sender: Any) {
+        guard let signupVC = self.storyboard?.instantiateViewController(identifier: "SignUpView") as? SignUpView else { return }
+        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
+    
     
     /*
     // MARK: - Navigation

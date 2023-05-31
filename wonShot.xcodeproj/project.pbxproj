@@ -26,6 +26,7 @@
 		95E0D6372A25DA3C0011B0B5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6362A25DA3B0011B0B5 /* SignUpView.swift */; };
 		95E0D63A2A25DC8A0011B0B5 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D6392A25DC8A0011B0B5 /* SignUpModel.swift */; };
 		95E0D63C2A25E20F0011B0B5 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D63B2A25E20F0011B0B5 /* CompleteView.swift */; };
+		95E0D63E2A25F18E0011B0B5 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D63D2A25F18E0011B0B5 /* TextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		95E0D6362A25DA3B0011B0B5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		95E0D6392A25DC8A0011B0B5 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		95E0D63B2A25E20F0011B0B5 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
+		95E0D63D2A25F18E0011B0B5 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextFieldExtension.swift; path = wonShot/Source/Common/Extensions/TextFieldExtension.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		95C5EEC329F6BC44005B36B0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				95E0D63F2A25F1930011B0B5 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -314,6 +317,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		95E0D63F2A25F1930011B0B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95E0D63D2A25F18E0011B0B5 /* TextFieldExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +412,7 @@
 				95A2C0A02A15568200CD7F87 /* TabarController.swift in Sources */,
 				95C5EEE02A00F55C005B36B0 /* LogInView.swift in Sources */,
 				95E0D6352A25C0060011B0B5 /* User.swift in Sources */,
+				95E0D63E2A25F18E0011B0B5 /* TextFieldExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

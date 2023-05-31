@@ -14,12 +14,22 @@ class SignUpView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var IDtextField: UITextField!
     
+    @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var passwordCheckTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        nameTF.underlined()
+        passwordTF.underlined()
+        emailTF.underlined()
+        passwordCheckTF.underlined()
+        IDtextField.underlined()
     }
     
     
@@ -40,5 +50,10 @@ class SignUpView: UIViewController, UITextFieldDelegate {
 //        }
 
     }
+    
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
 }
